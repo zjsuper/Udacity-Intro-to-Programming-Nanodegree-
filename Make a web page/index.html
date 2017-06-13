@@ -1,0 +1,122 @@
+<!-- This is an HTML comment. Comments allow you to communicate with other programmers using
+text that will be ignored by the computer! -->
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
+<head> <!-- The head tag includes important information about the page -->
+  <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+  This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+  You should include this line in the head of all of your webpages. -->
+  <title>Sicheng's Notes</title><!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <link rel="stylesheet" type="text/css" href="style.css"><!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+</head>
+
+<body><!-- The body tag is where the "flesh" of your HTML goes -->
+  <div id="heading">
+    <h1><b>HTML</b></h1>
+  </div>
+  <div id="contentlist">
+    <div class="content"><a href="#sub1">1.HTML</a></div>
+    <div class="content"><a href="#sub2">2.Creating a Structured Document with HTML</a></div>
+    <div class="content"><a href="#sub3">3.What is CSS?</a></div>
+    <div class="content"> <a href="#sub4">4.Adding Image</a></div>
+    <div class="content"><a href="#sub5">5.Box Sizing & Positioning</a></div>
+    <div class="content"> <a href="#sub6">6.Code, Test, Refine</a></div>
+  </div>
+  <h3 class="subtitle" id="sub1">
+    HTML
+  </h3>
+  <div>
+    <p> HTML is main documents type of web, which stands for<b><em>Hypertext Markup Language.</em></b> <a href="https://www.udacity.com/course/viewer/#!/c-ud000/l-4185478836/e-48329854/m-48480496">This video</a> introduces more information about HTML.
+    </p>
+    <p>
+      Type of elements in HTML is defined by <b>tags</b>. Some tags accept additional values called <em><b>attributes</b></em>. They provide additional information to the browser.
+    </p>
+    <p>
+      Also, the tags can be divided into two types, one is <em>inline</em>, the other is <em>block</em>.
+    </p>
+    <p>
+      Computers are stupid, so we must obey the rules or big problem will be made.
+    </p>
+  </div>
+  <h3 class="subtitle" id="sub2">
+    <b>Creating a Structured Document with HTML</b>
+  </h3>
+  
+  <div>
+    <p>
+      Browsers like Chrome have <b>developer tools</b>, it can be used to explore the web pages you are visiting. And you can make any change to the website, then return to origin by freshing the web.
+    </p>
+    <p>
+      HTML elements are either <b>inline</b> or <b>block</b>. Block elements form an "invisible box" around the content inside of them. 'div' is usually used to create boxes for elements.
+    </p>
+    <p>
+      "div", which will occupy specific rectangle area. "span" just use for text decoration and is inline element.
+      "div" can have "class", "id" like "d class = '' id = '' " , they can function similar, but not recommend for mix using them. href can be used to reference 'id' like href = "#id" 
+      "P" tag has attributes like line height, margin, etc.
+      In CSS, tag{}, .class{} and #id{}.
+    </p>
+  </div>
+  <div>
+    <p>
+      <b>Why coding style is important?</b>
+      1.Write and understand more efficient.
+      2.Communicate in a common style.
+      3.Increase productivity
+    </p>
+  </div>
+  
+  <h3 class="subtitle" id="sub3">
+  	What is CSS?
+  </h3>
+  	<div id="css">
+  		<div class="cssimage">
+  			CSS is code written to control the "style" of HTML elements. If you want to write CSS that makes all h1 elements have a black background and white text, you would write:
+  		</div>
+  		<div>
+  			<img src="cssexample.png" alt="css examle" class="cssimage">
+  		</div>
+  	</div>
+  		<div id="cssexample">
+  			In this example, the h1 is a <b>selector</b>. It says to the browser "I want you to apply the rules I'm about to tell you to every h1 element." After the h1 there is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to every h1 element.
+  		</div>
+  		<div>
+  			<p><b>Rule:</b> a line of CSS code describing the value that a certain attribute should take.</p> 
+  			<p><b>Property:</b> The property you want to change. </p> 
+  			<p><b>Value:</b> The value that you want to assign to the attribute. </p>
+  			<p><b>Selector:</b> The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML. </p>
+  			<p><b>Class:</b> A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1".</p>
+  			<p><b>ID: </b>ID's are unique identifiers that uniquely identifies an element in HTML.</p> 
+  		</div>
+  	
+  <h3 class="subtitle" id="sub4">
+  	Adding Image
+  </h3>
+  	<div>
+  		Use tag, "img", and two atrributes, "src" for source and "alt" for alternative if the image cannot display.
+  	</div>
+  <h3 class="subtitle" id="sub5">
+  	Box Sizing & Positioning
+  </h3>
+  	<div>
+  		<p>1.HTML elements are boxes and each box has 4 components.</p>
+		  <p>2.Because there are so many components to each box, it can often be hard to get the size of a box just right.</p>
+		  <p>3.There are two techniques you can use to help deal with sizing issues.</p>
+		  <p>4.Set sizes in terms of percentages rather than pixels.</p>
+		  <p>5.Set the box-sizing attribute to border-box for every element.</p>
+		<div>
+			<img src="borderset.png" alt="how to set border" class="borderset">
+		</div>
+		<p>Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.</p>
+		<p>Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.</p>
+		<p>More information can be found on <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">this site</a>.</p>
+  	</div>
+  <h3 class="subtitle" id="sub6">
+  	Code, Test, Refine
+  </h3>
+  	<div>
+  		<p>This is an iterative process, the <b>developer tools</b> of browser can be very helpful for test and refine. </p>
+      <p>
+        After finishing coding, websites can be used to validate <a href="https://validator.w3.org/#validate_by_input">HTML</a> and <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">css</a>.
+      </p>
+  	</div>
+</body>
